@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="makemytrip" class="spring_package.MakeMyTrip">
+<property name="travel" ref="train"></property>
+
+</bean>
+
+<bean id="bus" class="spring_package.Bus">
+	<property name="TravelBy" value="bus"></property>
+	
+</bean>
+<bean id="train" class="spring_package.Train">
+	<property name="TravelBy" value="train"></property>
+</bean>
+<bean id="flight" class="spring_package.Flight">
+	<property name="TravelBy" value="flight"></property>
+</bean>
+
+</beans>   
